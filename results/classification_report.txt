@@ -1,1 +1,8 @@
-Precision, Recall, F1-Score report will be saved here after model evaluation.
+              precision    recall  f1-score   support
+
+  legitimate       0.00      0.00      0.00         1
+       fraud       0.50      1.00      0.67         1
+
+    accuracy                           0.50         2
+   macro avg       0.25      0.50      0.33         2
+weighted avg       0.25      0.50      0.33         2

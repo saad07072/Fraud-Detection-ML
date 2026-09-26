@@ -1,0 +1,151 @@
+{
+  "dataset": {
+    "transactions": 5,
+    "fraud_transactions": 2,
+    "legitimate_transactions": 3,
+    "fraud_rate_percent": 40.0,
+    "features": 14,
+    "source_file": "sample.csv"
+  },
+  "models": {
+    "logistic_regression": {
+      "Model": "Logistic Regression",
+      "Precision": 0.5,
+      "Recall": 1.0,
+      "F1": 0.6666666666666666,
+      "ROC-AUC": 1.0,
+      "PR-AUC": 1.0,
+      "TP": 1,
+      "TN": 0,
+      "FP": 1,
+      "FN": 0
+    },
+    "random_forest": {
+      "Model": "Random Forest",
+      "Precision": 0.0,
+      "Recall": 0.0,
+      "F1": 0.0,
+      "ROC-AUC": 1.0,
+      "PR-AUC": 1.0,
+      "TP": 0,
+      "TN": 1,
+      "FP": 0,
+      "FN": 1
+    },
+    "xgboost": {
+      "Model": "XGBoost",
+      "Precision": 0.0,
+      "Recall": 0.0,
+      "F1": 0.0,
+      "ROC-AUC": 0.5,
+      "PR-AUC": 0.5,
+      "TP": 0,
+      "TN": 1,
+      "FP": 0,
+      "FN": 1
+    }
+  },
+  "selected_model": "Logistic Regression",
+  "threshold_analysis": [
+    {
+      "threshold": 0.1,
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "false_positives": 1,
+      "false_negatives": 0,
+      "true_positives": 1,
+      "true_negatives": 0
+    },
+    {
+      "threshold": 0.2,
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "false_positives": 1,
+      "false_negatives": 0,
+      "true_positives": 1,
+      "true_negatives": 0
+    },
+    {
+      "threshold": 0.3,
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "false_positives": 1,
+      "false_negatives": 0,
+      "true_positives": 1,
+      "true_negatives": 0
+    },
+    {
+      "threshold": 0.4,
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "false_positives": 1,
+      "false_negatives": 0,
+      "true_positives": 1,
+      "true_negatives": 0
+    },
+    {
+      "threshold": 0.5,
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "false_positives": 1,
+      "false_negatives": 0,
+      "true_positives": 1,
+      "true_negatives": 0
+    },
+    {
+      "threshold": 0.6,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "true_positives": 1,
+      "true_negatives": 1
+    },
+    {
+      "threshold": 0.7,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "true_positives": 1,
+      "true_negatives": 1
+    },
+    {
+      "threshold": 0.8,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "true_positives": 1,
+      "true_negatives": 1
+    },
+    {
+      "threshold": 0.9,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "true_positives": 1,
+      "true_negatives": 1
+    }
+  ],
+  "time_based_validation": {
+    "precision": null,
+    "recall": null,
+    "f1": null,
+    "roc_auc": null,
+    "pr_auc": null,
+    "train_size": 3,
+    "test_size": 2,
+    "note": "The sample dataset contains too few temporal steps for a stable time-based validation. The split is included to demonstrate the workflow, but the sample is not large enough to support a meaningful operational evaluation."
+  }
+}
